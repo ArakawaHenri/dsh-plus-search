@@ -1,0 +1,55 @@
+{
+  "name": "@dshplus/native-search",
+  "version": "0.0.1",
+  "publishConfig": {
+    "access": "public"
+  },
+  "type": "module",
+  "description": "DSH Plus · Native Search: Use the current model's native web search, with standard search as fallback.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArakawaHenri/dshplus-native-search.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ArakawaHenri/dshplus-native-search/issues"
+  },
+  "homepage": "https://github.com/ArakawaHenri/dshplus-native-search#readme",
+  "peerDependencies": {
+    "@deepseek-ai/schemastery": "^3.18.5"
+  },
+  "devDependencies": {
+    "@deepseek-ai/schemastery": "~3.18.5"
+  },
+  "engines": {
+    "node": ">=24",
+    "dsh": ">=0.2.1-rc.2"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "locale/*.json",
+    "icon.svg",
+    "lib/*.js",
+    "cordis.patch.yml",
+    "README.md",
+    "README.zh.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "check": "for f in index.js lib/*.js test/*.test.js; do node --check \"$f\" || exit 1; done"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "icon": "./icon.svg"
+}

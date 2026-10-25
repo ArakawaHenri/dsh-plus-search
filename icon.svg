@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
+  <path d="m22 22 5.5 5.5" stroke="url(#search-handle)" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="15.75" cy="15.75" r="7.75" stroke="url(#search-ring)" stroke-width="2.8"/>
+  <path d="M12.2 12.8a4.6 4.6 0 0 1 5.8-.7" stroke="url(#search-mint)" stroke-width="1.9" stroke-linecap="round"/>
+  <defs>
+    <linearGradient id="search-ring" x1="8" y1="8" x2="23.5" y2="23.5" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#45E7A4"/>
+      <stop offset=".5" stop-color="#69B9FF"/>
+      <stop offset="1" stop-color="#324DE2"/>
+    </linearGradient>
+    <linearGradient id="search-handle" x1="21.3" y1="21.3" x2="27.5" y2="27.5" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#658EFF"/>
+      <stop offset="1" stop-color="#324DE2"/>
+    </linearGradient>
+    <linearGradient id="search-mint" x1="12" y1="11.5" x2="18.5" y2="13.5" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#45E7A4"/>
+      <stop offset="1" stop-color="#05909D"/>
+    </linearGradient>
+  </defs>
+</svg>

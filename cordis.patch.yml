@@ -1,0 +1,11 @@
+- insert:
+    - id: dshplus-native-search
+      name: '@dshplus/native-search'
+      config: {}
+
+# Cordis patch config replaces the whole target config object, so fetchProvider is kept alongside searchProvider.
+- id: web
+  name: '@deepseek-ai/dsh-web'
+  config:
+    searchProvider: native-preferring
+    fetchProvider: http
